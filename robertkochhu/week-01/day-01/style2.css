@@ -1,0 +1,49 @@
+
+.elso{
+    text-align: right;
+    background : black;
+    padding: 0% 10% 2% 0%;
+    font-size: 50px; 
+}
+.masodik  {
+    padding: 0% 10%;}
+
+.harmadik {
+    padding: 0% 10%;}
+
+h2 {text-align:center;
+    font-size: 50px;  }
+
+h1 {
+    font-size: 75px;
+
+}
+h3{
+    font-size:35px;
+    color: purple;
+}
+.kozep {text-align:center;
+       font-size: 30px;}
+
+    
+@font-face {
+font-family:'Roboto', sans-serif;
+font-weight: 40px;
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+}
+h1, h2, h3 {
+    font-family:'Roboto', sans-serif;
+}
+
+p { font-family: 'Courier New', Courier, monospace;}
+
+a { color: #ff0099;}
+body {
+    background-image:hatter.png; }
+img{
+    height: 50px;
+    display:block;
+    padding: 2% 0% 0% 10%;
+
+
+}
