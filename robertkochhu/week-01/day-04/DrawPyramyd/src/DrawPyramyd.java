@@ -8,11 +8,7 @@ public class DrawPyramyd {
 
 
 
-        for(int i = 1; i<=ui; i++)
-        {System.out.println();
-        for(int j =1; j<=ui; j++)
-        {System.out.println(" ");
-        for(ui1)
+
 
 
         }
