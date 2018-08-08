@@ -39,11 +39,9 @@ p { font-family: 'Courier New', Courier, monospace;}
 
 a { color: #ff0099;}
 body {
-    background-image:hatter.png; }
+    background-image:url(hatter.png); }
 img{
     height: 50px;
     display:block;
     padding: 2% 0% 0% 10%;
-
-
 }
