@@ -1,8 +1,17 @@
 public class Student {
-    public void learn() {
+    String name;
+
+    Student(String name) {
+        this.name = name;
     }
 
-    public void question(Teacher answer) {
+    public void learn(Teacher b) {
+        System.out.println(this.name+"learns from" +b.name);
+    }
+
+    public void question(Teacher a ) {
+        System.out.println(this.name +"questions" +a.name);
+        a.answer(this);
     }
 
 
