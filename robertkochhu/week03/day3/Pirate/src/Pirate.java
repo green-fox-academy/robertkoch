@@ -43,7 +43,7 @@ public class Pirate {
     }
 
     public void brawl(Pirate another) {
-        if (another.isHeDead == false) {
+        if (another.isHeDead == false && another !=this) {
             int chances = random1.nextInt(3);
             if (chances == 0) {
                 another.isHeDead = true;

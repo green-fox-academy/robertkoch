@@ -5,7 +5,7 @@ public class Main {
         Pirate pirate3= new Pirate("Tom",false,false,2,"Mayor");
 
 
-        pirate1.brawl(pirate2);
+        pirate1.brawl(pirate1);
 
 
 
