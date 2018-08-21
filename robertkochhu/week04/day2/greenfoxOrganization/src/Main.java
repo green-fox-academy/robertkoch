@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ArrayList<Person> people = new ArrayList<>();
 
         Person mark = new Person("Mark", 46, "male");
@@ -31,7 +31,7 @@ public class Main {
             sponsor.hire(1);
         }
 
-        for(Person person : people) {
+        for (Person person : people) {
             person.introduce();
             person.getGoal();
         }
