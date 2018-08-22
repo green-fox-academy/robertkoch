@@ -9,9 +9,8 @@ public class Plant {
     public double waterRemainingPercent;
     public String kind;
 
-    public void newWaterLevel(int waterAmount) {
-        this.waterLevel = this.waterLevel + waterAmount * waterRemainingPercent;
-    }
+
+
 
     }
 
