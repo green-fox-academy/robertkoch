@@ -32,12 +32,12 @@ public class Student extends Person implements Cloneable {
     public Object clone(){
         try{
             return super.clone();}
-            catch(Exception e){
-                System.out.println("not able to clone");
-            }
-            return null;
+        catch(Exception e){
+            System.out.println("not able to clone");
         }
+        return null;
     }
-
-
 }
+
+
+

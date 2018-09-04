@@ -11,7 +11,7 @@ public class DrawPyramid {
         {
             System.out.println();
 
-            for (int j = 1; j <= space; j++)
+            for (int j = 0; j <= space; j++)
             {
                 System.out.print(" ");
             }
