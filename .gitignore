@@ -1,6 +1,7 @@
 .idea
 out
 *.iml
+*.txt
 *.xml
 *.class
 # if you have a mac
