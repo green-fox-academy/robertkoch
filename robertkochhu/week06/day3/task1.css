@@ -1,0 +1,36 @@
+body {
+    background-color: #538aff; }
+td,table,th{
+    border-collapse: collapse;
+    border: 1px solid #2a786e;
+}
+th{
+    color: white;
+    background-color: black;
+    text-align:left;
+    padding-left: 20px;
+
+
+}
+tr:nth-child(even){
+
+    color:black;
+    background-color:white;
+}
+tr:nth-child(odd){
+
+    color:black;
+    background-color:gainsboro;
+}
+table{
+    width:80%;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    top:10%;
+    left:10%;
+    font-size: 3em;
+}
+td{
+    padding-left: 20px;
+}

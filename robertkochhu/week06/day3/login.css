@@ -1,0 +1,63 @@
+#Username:focus{
+    border:10px solid green;
+    width:80%;
+    height:40px;
+}
+#Username{
+    width:80%;
+    height:40px;
+}
+#Password{
+    width:80%;
+    height:40px;
+}
+#Password:focus{
+    border:10px solid green;
+    width:80%;
+    height:60px;
+}
+form{
+    background-color: white;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+body{
+    background-color:grey;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+}
+form{
+    height:500px;
+}
+h1{
+    font-size: 36px;
+}
+label{
+    font-size:22px;
+}
+.button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+
+
+
+
+
+
+}
+.fpas{
+padding-left:400px;
+    font-size: 20px;
+}
