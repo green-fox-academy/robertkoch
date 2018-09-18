@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/multiAccount.css}"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<table>
+    <th:block th:each="BankAccount:${list} ">
+        <tr th:if="${BankAccount.isKing()}" class="king">
+        <td th:text="${BankAccount.name}"></td>
+        <td th:text="${BankAccount.balance}"></td>
+        <td th:text="${BankAccount.animalType}"></td>
+        <td th:text="${BankAccount.isKing()}"></td>
+        <td>
+            <div th:switch="${BankAccount.isGood()}">
+                <p th:case="true">Good one</p>
+                <p th:case="false">Bad one</p>
+            </div>
+        </td>
+        </tr>
+        <tr th:unless="${BankAccount.isKing()}">
+            <td th:text="${BankAccount.name}"></td>
+            <td th:text="${BankAccount.balance}"></td>
+            <td th:text="${BankAccount.animalType}"></td>
+            <td th:text="${BankAccount.isKing()}"></td>
+            <td>
+                <div th:switch="${BankAccount.isGood()}">
+                    <p th:case="true">Good one</p>
+                    <p th:case="false">Bad one</p>
+                </div>
+            </td>
+
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
