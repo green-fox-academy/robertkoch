@@ -1,5 +1,7 @@
 package com.simbabank.simbaaa.models;
 
+import java.text.DecimalFormat;
+
 public class BankAccount {
     private String name;
     private int balance;
