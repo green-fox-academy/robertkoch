@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 
 public class showController {
+
     @RequestMapping("/show")
     public String showBankAccount(Model model) {
         BankAccount bankAccountOfSimba = new BankAccount("Simba", 2000, "lion");
