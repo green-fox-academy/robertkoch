@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/nutrition.css}" />
+    <title>Nutrition Store</title>
+</head>
+<body>
+<p th:text="${nutri}"></p>
+<img src="pictures/shopfox.png"><br>
+<select class="selected">
+    <option value="mushroom">Mushroom</option>
+    <option value="pizza">Pizza</option>
+    <option value="rabbit">Rabbit</option>
+    <option value="boar">Boar</option>
+</select>
+<select class="selected">
+    <option value="water">Water</option>
+    <option value="beer">Beer</option>
+    <option value="wine">Wine</option>
+    <option value="blood">Blood</option>
+</select><br>
+<button type="submit">Submit</button>
+
+</body>
+</html>
