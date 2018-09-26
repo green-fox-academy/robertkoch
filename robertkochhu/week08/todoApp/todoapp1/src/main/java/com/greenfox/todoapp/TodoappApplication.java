@@ -28,6 +28,7 @@ public class TodoappApplication implements CommandLineRunner {
         Todo todo2=new Todo();
         todo2.setTitle("Jump");
         todo2.setDone(true);
+        todo2.setUrgent(true);
         todoRepository.save(todo2);
         todoRepository.save(todo);
         todoRepository.save(todo1);
