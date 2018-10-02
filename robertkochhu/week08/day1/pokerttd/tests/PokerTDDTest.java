@@ -15,22 +15,22 @@ public class PokerTDDTest {
     @Before
     public void setUp() throws Exception {
         pokerTDD = new PokerTDD();
-        whiteList.add("2C");
-        whiteList.add("3D");
-        whiteList.add("4C");
-        whiteList.add("5C");
-        whiteList.add("6H");
+        whiteList.add("JC");
+        whiteList.add("JD");
+        whiteList.add("KC");
+        whiteList.add("Ks");
+        whiteList.add("KH");
 
-        blackList.add("2H");
-        blackList.add("2S");
-        blackList.add("5S");
+        blackList.add("QH");
+        blackList.add("QS");
+        blackList.add("AS");
         blackList.add("AC");
         blackList.add("AD");
     }
 
     @Test
     public void test1() {
-        assertEquals("white wins", pokerTDD.selectWinner(whiteList, blackList));
+        assertEquals("black wins", pokerTDD.selectWinner(whiteList, blackList));
     }
 
     @After

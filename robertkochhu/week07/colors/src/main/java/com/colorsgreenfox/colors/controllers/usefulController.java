@@ -40,8 +40,9 @@ public class usefulController {
         model.addAttribute("email", emailChecker);
         return "email";
     }
+
     @RequestMapping("/useful/decoder")
-    public String decoderStuff(Model model,@RequestParam("text")String text,@RequestParam("number")int number){
+    public String decoderStuff(Model model, @RequestParam("text") String text, @RequestParam("number") int number) {
         return "decoder";
     }
 }

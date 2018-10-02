@@ -21,11 +21,11 @@ public class TodoappApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Todo todo= new Todo();
+        Todo todo = new Todo();
         todo.setTitle("lets see");
-        Todo todo1=new Todo();
+        Todo todo1 = new Todo();
         todo1.setTitle("taks1");
-        Todo todo2=new Todo();
+        Todo todo2 = new Todo();
         todo2.setTitle("Jump");
         todo2.setDone(true);
         todo2.setUrgent(true);

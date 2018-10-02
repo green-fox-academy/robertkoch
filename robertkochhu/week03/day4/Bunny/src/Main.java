@@ -6,11 +6,10 @@ public class Main {
     }
 
     public static int earCounter(int bunnies) {
-        if(bunnies ==1){
+        if (bunnies == 1) {
             return 2;
-        }
-        else{
-            int bunnyEars = earCounter(bunnies-1)+2;
+        } else {
+            int bunnyEars = earCounter(bunnies - 1) + 2;
             return bunnyEars;
         }
 

@@ -8,11 +8,11 @@ public class Drawing {
     public static void mainDraw(Graphics graphics) {
         // draw a red horizontal line to the canvas' middle.
         graphics.setColor(Color.red);
-        graphics.drawLine(120,140, 200, 140);
+        graphics.drawLine(120, 140, 200, 140);
 
         // draw a green vertical line to the canvas' middle.
         graphics.setColor(Color.green);
-        graphics.drawLine(150,10,150,300);
+        graphics.drawLine(150, 10, 150, 300);
 
 
     }

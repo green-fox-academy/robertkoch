@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit</title>
+</head>
+<body>
+<a href="add">Submit new post</a><br>
+<h1>Trending posts</h1>
+<table>
+    <th:block th:each="post : ${posts}">
+        <tr>
+            <td>
+                <button type="submit">+</button>
+            </td>
+            <td>
+                <button type="submit">-</button>
+            </td>
+            <td th:text="${post.getPopular()}"></td>
+            <td><a th:href="${post.getLink()}">
+                <span th:text="${post.getTitle()}"></span></a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

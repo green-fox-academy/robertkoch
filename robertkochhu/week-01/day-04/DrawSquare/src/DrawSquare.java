@@ -9,15 +9,16 @@ public class DrawSquare {
 
         for (int i = 0; i <= ur; i++) {
             for (int j = 0; j <= ur; j++) {
-                if(i==0 || j==0 || i ==ur || j==ur){
+                if (i == 0 || j == 0 || i == ur || j == ur) {
                     System.out.print("*");
 
-                                                    }
-                else {System.out.print(" ");
-                    }
+                } else {
+                    System.out.print(" ");
+                }
 
 
+            }
+            System.out.println();
         }
-        System.out.println();
     }
-}}
+}

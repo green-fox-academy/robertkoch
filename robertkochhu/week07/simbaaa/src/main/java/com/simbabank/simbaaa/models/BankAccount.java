@@ -13,7 +13,7 @@ public class BankAccount {
         this.name = name;
         this.balance = balance;
         this.animalType = animalType;
-        this.isKing=false;
+        this.isKing = false;
     }
 
     public BankAccount(String name, int balance, String animalType, boolean isKing) {

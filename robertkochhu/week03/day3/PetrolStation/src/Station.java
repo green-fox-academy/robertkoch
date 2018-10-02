@@ -1,8 +1,8 @@
 public class Station {
     int gasAmount;
 
-    Station(int gasAmount){
-        this.gasAmount=gasAmount;
+    Station(int gasAmount) {
+        this.gasAmount = gasAmount;
     }
 
 

@@ -2,5 +2,5 @@ package com.example.todo;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserRepository extends CrudRepository<User,Long> {
+public interface UserRepository extends CrudRepository<User, Long> {
 }

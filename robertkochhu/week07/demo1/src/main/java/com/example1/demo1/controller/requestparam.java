@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class requestparam {
     @RequestMapping("/greeting")
-    public Greeting greetUser(@RequestParam("name")String name){
-        return new Greeting(2,name);
+    public Greeting greetUser(@RequestParam("name") String name) {
+        return new Greeting(2, name);
     }
 }

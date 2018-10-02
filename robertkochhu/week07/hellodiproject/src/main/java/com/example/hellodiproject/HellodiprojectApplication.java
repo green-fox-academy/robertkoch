@@ -8,11 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class HellodiprojectApplication implements CommandLineRunner {
-   // @Autowired
+    // @Autowired
     Printer printer;
 
     public HellodiprojectApplication(Printer printer) {
-        this.printer=printer;
+        this.printer = printer;
     }
 
     public static void main(String[] args) {

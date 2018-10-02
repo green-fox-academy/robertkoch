@@ -9,8 +9,7 @@ public class Drawing {
     public static void mainDraw(Graphics graphics) {
         // Draw a green 10x10 square to the canvas' center.
         graphics.setColor(Color.green);
-        graphics.drawRect(140,160,10,10);
-
+        graphics.drawRect(140, 160, 10, 10);
 
 
     }

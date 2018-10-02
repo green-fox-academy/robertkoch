@@ -10,7 +10,7 @@ public class Drawing {
         // [https://github.com/green-fox-academy/teaching-materials/blob/master/workshop/drawing/purple-steps/r3.png]
         graphics.setColor(Color.red);
         for (int i = 0; i < 20; i++) {
-            graphics.fillRect(0+i*10, 0+i*10, 10, 10);
+            graphics.fillRect(0 + i * 10, 0 + i * 10, 10, 10);
 
         }
 

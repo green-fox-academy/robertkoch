@@ -9,7 +9,6 @@ public class AnagramTest {
     @Test
 
 
-
     public void anagram() {
         Anagram anagram1 = new Anagram();
         assertTrue(anagram1.anagram(name, nameOne) == true);

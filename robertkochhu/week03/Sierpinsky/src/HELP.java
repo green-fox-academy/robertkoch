@@ -17,15 +17,14 @@ public class HELP extends JComponent {
         Graphics2D graphics = (Graphics2D) g;
 
 
-
-
     }
-    private void fillRect1(Graphics2D graphics,int xCord,int yCord,int width,int depth){
-        if(depth > MAX_DEPTH){
+
+    private void fillRect1(Graphics2D graphics, int xCord, int yCord, int width, int depth) {
+        if (depth > MAX_DEPTH) {
             return;
         }
 
-        graphics.fillRect(xCord / 2, yCord / 2, width,width);
+        graphics.fillRect(xCord / 2, yCord / 2, width, width);
 
         graphics.fillRect1(xCord / 2 / 4, yCord / 2 / 4, width / 4, width / 4, depth + 1);
         graphics.fillRect1(width / 2 / 4, yCord / 2 + yCord, width / 4, width / 4, depth + 1);
@@ -37,13 +36,6 @@ public class HELP extends JComponent {
         graphics.fillRect1(xCord / 2 + xCord, yCord / 2 + yCord / 4, width / 4, width / 4, depth + 1);
 
     }
-
-
-
-
-
-
-
 
 
     public static void main(String[] args) {

@@ -28,7 +28,7 @@ public class Pirate {
         if (this.isHeDead == true) {
             System.out.println("He is dead");
         } else if (this.intoxication < 4) {
-            System.out.println(this.pirateName+" Says: Pour me anudder!");
+            System.out.println(this.pirateName + " Says: Pour me anudder!");
         } else {
             System.out.println("Arghh, I'ma Pirate. How d'ya d'ink its goin?");
             this.isHePassedOut = true;
@@ -43,18 +43,18 @@ public class Pirate {
     }
 
     public void brawl(Pirate another) {
-        if (another.isHeDead == false && another !=this) {
+        if (another.isHeDead == false && another != this) {
             int chances = random1.nextInt(3);
             if (chances == 0) {
                 another.isHeDead = true;
-                System.out.println(another.pirateName +" is murdered.");
+                System.out.println(another.pirateName + " is murdered.");
             } else if (chances == 1) {
                 this.isHeDead = true;
-                System.out.println(this.pirateName +" is murdered.");
+                System.out.println(this.pirateName + " is murdered.");
             } else if (chances == 2) {
                 this.isHeDead = true;
                 another.isHeDead = true;
-                System.out.println(this.pirateName+ " and " +another.pirateName +" killed each other.");
+                System.out.println(this.pirateName + " and " + another.pirateName + " killed each other.");
             }
 
 

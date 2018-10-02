@@ -11,6 +11,6 @@ public class Teacher {
 
     public void teach(Student c) {
         System.out.println(this.name + " teaches " + c.name);
-       c.learn(this);
+        c.learn(this);
     }
 }

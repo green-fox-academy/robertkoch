@@ -18,16 +18,16 @@ public class TodoController {
         this.todoRepository = todoRepository;
     }
 
-    @RequestMapping(value={"/todo","/todo/list","/todolist"})
-    public String list(Model model, @RequestParam(required=false)Boolean isActive){
+    @RequestMapping(value = {"/todo", "/todo/list", "/todolist"})
+    public String list(Model model, @RequestParam(required = false) Boolean isActive) {
         if (isActive == null) {
             model.addAttribute("todos", todoRepository.findAll());
-        }else if(isActive){
+        } else if (isActive) {
             List<Todo> isNotDone = Streamable.of(todoRepository.findAll()).stream()
-                .filter(a -> !a.isDone())
-                .collect(Collectors.toList());
-            model.addAttribute("todos", isNotDone);}
-        else if (!isActive) {
+                    .filter(a -> !a.isDone())
+                    .collect(Collectors.toList());
+            model.addAttribute("todos", isNotDone);
+        } else if (!isActive) {
             List<Todo> isNotDone = Streamable.of(todoRepository.findAll()).stream()
                     .filter(a -> a.isDone())
                     .collect(Collectors.toList());
@@ -35,8 +35,9 @@ public class TodoController {
         }
         return "todolist";
     }
+
     @GetMapping("/add")
-    public String add(Model model){
+    public String add(Model model) {
         return ("add");
     }
 

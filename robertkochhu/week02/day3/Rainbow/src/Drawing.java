@@ -16,33 +16,35 @@ public class Drawing {
             rainbQuare(graphics, colorlist[i], Square[i]);
 
 
-        }}
-        public static void rainbQuare (Graphics graphics, Color color,int Square){
-            int y = HEIGHT / 2;
-            int x = WIDTH / 2;
-            graphics.setColor(color);
-            graphics.fillRect(x, y, Square, Square);
         }
+    }
 
-        // Don't touch the code below
-        static int WIDTH = 320;
-        static int HEIGHT = 343;
+    public static void rainbQuare(Graphics graphics, Color color, int Square) {
+        int y = HEIGHT / 2;
+        int x = WIDTH / 2;
+        graphics.setColor(color);
+        graphics.fillRect(x, y, Square, Square);
+    }
 
-        public static void main (String[]args){
-            JFrame jFrame = new JFrame("Drawing");
-            jFrame.setSize(new Dimension(WIDTH, HEIGHT));
-            jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            jFrame.add(new ImagePanel());
-            jFrame.setLocationRelativeTo(null);
-            jFrame.setVisible(true);
+    // Don't touch the code below
+    static int WIDTH = 320;
+    static int HEIGHT = 343;
+
+    public static void main(String[] args) {
+        JFrame jFrame = new JFrame("Drawing");
+        jFrame.setSize(new Dimension(WIDTH, HEIGHT));
+        jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jFrame.add(new ImagePanel());
+        jFrame.setLocationRelativeTo(null);
+        jFrame.setVisible(true);
+    }
+
+    static class ImagePanel extends JPanel {
+        @Override
+        protected void paintComponent(Graphics graphics) {
+            super.paintComponent(graphics);
+            mainDraw(graphics);
         }
-
-        static class ImagePanel extends JPanel {
-            @Override
-            protected void paintComponent(Graphics graphics) {
-                super.paintComponent(graphics);
-                mainDraw(graphics);
-            }
-        }
+    }
 
 }

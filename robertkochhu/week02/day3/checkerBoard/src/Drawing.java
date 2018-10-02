@@ -12,11 +12,11 @@ public class Drawing {
         graphics.fillRect(a, b, 200, 200);
         graphics.setColor(Color.white);
 
-        for(int i=0;i<200;i+=25){
-            int a =0;
+        for (int i = 0; i < 200; i += 25) {
+            int a = 0;
 
-            graphics.fillRect(a,b,25,25);
-            a+=25;
+            graphics.fillRect(a, b, 25, 25);
+            a += 25;
         }
 
 

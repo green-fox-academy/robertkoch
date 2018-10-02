@@ -26,16 +26,16 @@ public class UtilityService {
 
     public Boolean validEmail(String email) {
         if (email.contains("@") && email.contains(".")) {
-            return true; }
-            else if(email.length()<1){
-               return false;
-        }
-        else return false;
+            return true;
+        } else if (email.length() < 1) {
+            return false;
+        } else return false;
     }
+
     public String caesar(String text, int number) {
         String result = "";
-        for(int i = 0; i < text.length(); i++) {
-            result += (char)((int)text.charAt(i) + number);
+        for (int i = 0; i < text.length(); i++) {
+            result += (char) ((int) text.charAt(i) + number);
         }
         return result;
     }

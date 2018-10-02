@@ -12,12 +12,11 @@ public class Drawing {
         int width = 400;
 
 
-
     }
 
     private void drawRect(Graphics2D graphics, int xCord, int yCord, int width) {
 
-        int depth=1;
+        int depth = 1;
         if (depth < MAXDEPTH) {
             return;
 
@@ -32,28 +31,29 @@ public class Drawing {
             graphics.fillRect(xCord / 2 / 4, yCord / 2 + yCord / 4, width / 4, width / 4, depth + 1);
             graphics.fillRect(xCord / 2 + xCord, yCord / 2 + yCord / 4, width / 4, width / 4, depth + 1);
 
-        }}
-
-
-        static int WIDTH = 1000;
-        static int HEIGHT = 1000;
-
-        public static void main (String[]args){
-            JFrame jFrame = new JFrame("Drawing");
-            jFrame.setSize(new Dimension(WIDTH, HEIGHT));
-            jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            jFrame.add(new ImagePanel());
-            jFrame.setLocationRelativeTo(null);
-            jFrame.setVisible(true);
         }
-
-        static class ImagePanel extends JPanel {
-            @Override
-            protected void paintComponent(Graphics graphics) {
-                super.paintComponent(graphics);
-                mainDraw(graphics);
-
-            }
-        }
-
     }
+
+
+    static int WIDTH = 1000;
+    static int HEIGHT = 1000;
+
+    public static void main(String[] args) {
+        JFrame jFrame = new JFrame("Drawing");
+        jFrame.setSize(new Dimension(WIDTH, HEIGHT));
+        jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jFrame.add(new ImagePanel());
+        jFrame.setLocationRelativeTo(null);
+        jFrame.setVisible(true);
+    }
+
+    static class ImagePanel extends JPanel {
+        @Override
+        protected void paintComponent(Graphics graphics) {
+            super.paintComponent(graphics);
+            mainDraw(graphics);
+
+        }
+    }
+
+}

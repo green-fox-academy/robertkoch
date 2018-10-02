@@ -3,7 +3,7 @@ public class Kata {
         String text = "This is a test!";
         final int n = 1;
         System.out.println(encrypt(text, n));
-        System.out.println(decrypt(text,n));
+        System.out.println(decrypt(text, n));
 
 
     }
@@ -11,7 +11,7 @@ public class Kata {
     public static String encrypt(final String text, final int n) {
         String encryptedText = "";
         String temporary = text;
-        if (text ==""   ) {
+        if (text == "") {
             return "";
         }
         if (n <= 0) {
@@ -36,10 +36,10 @@ public class Kata {
         String temporary = encryptedText;
         for (int k = 1; k <= n; k++) {
 
-            for (int i = encryptedText.length()-1; i >0; i = i -2) {
+            for (int i = encryptedText.length() - 1; i > 0; i = i - 2) {
                 decryptedText = encryptedText + temporary.charAt(i);
             }
-            for (int j = encryptedText.length()-1; j >0; j =-2) {
+            for (int j = encryptedText.length() - 1; j > 0; j = -2) {
                 decryptedText = encryptedText + temporary.charAt(j);
             }
             temporary = encryptedText.substring((k - 1) * encryptedText.length());

@@ -10,26 +10,26 @@ public class Triangles {
         int height = 10;
         int row = 21;
         int tri = 21;
-        for(int j=tri;tri>0;tri--){
+        for (int j = tri; tri > 0; tri--) {
 
-            triang(side,height,row,tri,graphics);
-            side+=5;
-            row-=1;}
+            triang(side, height, row, tri, graphics);
+            side += 5;
+            row -= 1;
+        }
     }
 
-        public static void triang(int a,int b, int c, int d,Graphics graphics){
-        for(int i=d;i>0;i--){
-            graphics.drawLine(a,b*c,a+10,b*c);
-            graphics.drawLine(a+10,b*c,a+5,b*(c-1));
-            graphics.drawLine(a+5,b*(c-1),a,b*c);
-            a+=10;
+    public static void triang(int a, int b, int c, int d, Graphics graphics) {
+        for (int i = d; i > 0; i--) {
+            graphics.drawLine(a, b * c, a + 10, b * c);
+            graphics.drawLine(a + 10, b * c, a + 5, b * (c - 1));
+            graphics.drawLine(a + 5, b * (c - 1), a, b * c);
+            a += 10;
 
 
         }
 
 
     }
-
 
 
     // Don't touch the code below

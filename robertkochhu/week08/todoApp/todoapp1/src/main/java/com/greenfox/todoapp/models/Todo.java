@@ -14,12 +14,13 @@ public class Todo {
     boolean urgent;
     boolean done;
 
-    public Todo( String title) {
+    public Todo(String title) {
         this.id = id;
         this.title = title;
         this.urgent = false;
         this.done = false;
     }
+
     public Todo() {
         this.id = id;
         this.title = title;

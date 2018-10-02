@@ -10,9 +10,8 @@ public class Drawing {
         for (int i = 0; i < 12; i++) {
             graphics.drawLine(WIDTH / 2, i * 15, WIDTH / 2 + i * 15, HEIGHT / 2);
             graphics.drawLine(WIDTH / 2, i * 15, WIDTH / 2 - i * 15, HEIGHT / 2);
-            graphics.drawLine(WIDTH / 2, HEIGHT-(i * 15), WIDTH/2 +(i*15),HEIGHT/2);
-            graphics.drawLine(WIDTH / 2, HEIGHT-(i * 15), WIDTH/2 -(i*15),HEIGHT/2);
-
+            graphics.drawLine(WIDTH / 2, HEIGHT - (i * 15), WIDTH / 2 + (i * 15), HEIGHT / 2);
+            graphics.drawLine(WIDTH / 2, HEIGHT - (i * 15), WIDTH / 2 - (i * 15), HEIGHT / 2);
 
 
         }

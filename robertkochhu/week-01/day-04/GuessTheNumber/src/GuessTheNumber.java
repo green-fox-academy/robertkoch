@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class GuessTheNumber {
     public static void main(String[] args) {
 
@@ -15,13 +16,8 @@ public class GuessTheNumber {
             } else {
                 System.out.println("You found it");
             }
-        }while(u1!= numb1);
+        } while (u1 != numb1);
 
 
-
-
-
-
-
-        }
     }
+}

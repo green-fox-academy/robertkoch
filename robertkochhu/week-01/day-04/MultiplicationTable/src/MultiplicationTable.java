@@ -5,7 +5,10 @@ public class MultiplicationTable {
         Scanner scanner = new Scanner(System.in);
         int ui = scanner.nextInt();
         int i = 1;
-        while (i < 11) {System.out.println(i*ui); i +=1;}
+        while (i < 11) {
+            System.out.println(i * ui);
+            i += 1;
+        }
 
     }
 }

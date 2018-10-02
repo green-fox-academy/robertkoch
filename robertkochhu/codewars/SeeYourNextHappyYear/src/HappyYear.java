@@ -20,9 +20,9 @@ public class HappyYear {
                 String yearString = Integer.toString(year + 1);
                 if (arraylist.contains(String.valueOf(yearString.charAt(i))) != false) {
                     arraylist.add(String.valueOf(yearString.charAt(i)));
+                } else {
+                    year += 1;
                 }
-                else{
-                year += 1;}
             }
         }
         for (int j = 0; j < arraylist.size(); j++) {

@@ -6,11 +6,11 @@ public class Student {
     }
 
     public void learn(Teacher b) {
-        System.out.println(this.name+"learns from" +b.name);
+        System.out.println(this.name + "learns from" + b.name);
     }
 
-    public void question(Teacher a ) {
-        System.out.println(this.name +"questions" +a.name);
+    public void question(Teacher a) {
+        System.out.println(this.name + "questions" + a.name);
         a.answer(this);
     }
 

@@ -18,7 +18,7 @@ public class randomColorController {
 
     @GetMapping("/randomColor")
     public String formIt(Model model) {
-        model.addAttribute("hellos",hellos) ;
-    return "randomColor";
+        model.addAttribute("hellos", hellos);
+        return "randomColor";
     }
 }

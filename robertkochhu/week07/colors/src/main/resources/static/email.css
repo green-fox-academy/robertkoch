@@ -1,8 +1,9 @@
-.true{
+.true {
     font-size: 200px;
-    color:green;
+    color: green;
 }
-.false{
+
+.false {
     font-size: 200px;
-    color:red;
+    color: red;
 }

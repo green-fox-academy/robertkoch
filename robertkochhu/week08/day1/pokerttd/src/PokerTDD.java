@@ -5,7 +5,6 @@ public class PokerTDD {
     ArrayList<String> blackListpairs = new ArrayList<>();
 
     public static void main(String[] args) {
-
     }
 
     public String selectWinner(ArrayList<String> white, ArrayList<String> black) {
@@ -22,7 +21,6 @@ public class PokerTDD {
         for (int i = 0; i < whiteNumbers.size(); i++) {
 
         }
-
 
         if (checkPair(white, "W") > checkPair(black, "B")) {
             return "white wins";
@@ -78,7 +76,6 @@ public class PokerTDD {
         }
         return "Tie.";
     }
-
 }
 
 

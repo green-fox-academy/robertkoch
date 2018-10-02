@@ -6,11 +6,12 @@ public class PrintBigger {
         int ui1 = scanner.nextInt();
         int ui2 = scanner.nextInt();
 
-        if (ui1 > ui2)
-        {System.out.println(ui1);}
-        else if (ui1 == ui2)
-        {System.out.println("egyenlo");}
-        else
-            {System.out.println(ui2);}
+        if (ui1 > ui2) {
+            System.out.println(ui1);
+        } else if (ui1 == ui2) {
+            System.out.println("egyenlo");
+        } else {
+            System.out.println(ui2);
+        }
     }
 }

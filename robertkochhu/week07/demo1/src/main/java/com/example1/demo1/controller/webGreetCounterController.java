@@ -10,10 +10,11 @@ import java.util.concurrent.atomic.AtomicLong;
 @Controller
 public class webGreetCounterController {
     AtomicLong atomicLong = new AtomicLong(0);
+
     @RequestMapping("/web/greetingcounter")
-    public String greeting(Model model, @RequestParam("name")String name) {
-        model.addAttribute("name", name+" This site was loaded "+
-                atomicLong.getAndIncrement()+" times since last server start.");
+    public String greeting(Model model, @RequestParam("name") String name) {
+        model.addAttribute("name", name + " This site was loaded " +
+                atomicLong.getAndIncrement() + " times since last server start.");
         return "greetingcounter";
     }
 }

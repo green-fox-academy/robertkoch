@@ -1,5 +1,5 @@
 public class Apple {
-    public String getApple(){
+    public String getApple() {
         return "apple";
     }
 }

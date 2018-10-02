@@ -1,47 +1,63 @@
 
-.elso{
+.elso {
     text-align: right;
-    background : black;
+    background: black;
     padding: 0% 10% 2% 0%;
-    font-size: 50px; 
+    font-size: 50px;
 }
-.masodik  {
-    padding: 0% 10%;}
+
+.masodik {
+    padding: 0% 10%;
+}
 
 .harmadik {
-    padding: 0% 10%;}
+    padding: 0% 10%;
+}
 
-h2 {text-align:center;
-    font-size: 50px;  }
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
 
 h1 {
     font-size: 75px;
 
 }
-h3{
-    font-size:35px;
+
+h3 {
+    font-size: 35px;
     color: purple;
 }
-.kozep {text-align:center;
-       font-size: 30px;}
 
-    
+.kozep {
+    text-align: center;
+    font-size: 30px;
+}
+
 @font-face {
-font-family:'Roboto', sans-serif;
-font-weight: 40px;
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    font-family: 'Roboto', sans-serif;
+    font-weight: 40px;
+    < link href = "https://fonts.googleapis.com/css?family=Roboto" rel = "stylesheet" >
 }
+
 h1, h2, h3 {
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-p { font-family: 'Courier New', Courier, monospace;}
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
 
-a { color: #ff0099;}
+a {
+    color: #ff0099;
+}
+
 body {
-    background-image:url(hatter.png); }
-img{
+    background-image: url(hatter.png);
+}
+
+img {
     height: 50px;
-    display:block;
+    display: block;
     padding: 2% 0% 0% 10%;
 }

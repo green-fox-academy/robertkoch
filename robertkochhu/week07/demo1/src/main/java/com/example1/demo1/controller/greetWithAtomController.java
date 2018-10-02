@@ -10,9 +10,10 @@ import java.util.concurrent.atomic.AtomicLong;
 public class greetWithAtomController {
 
     AtomicLong atomicLong = new AtomicLong(0);
-@RequestMapping("/mapAtom")
-    public Greeting countUser(){
-    return new Greeting(atomicLong.incrementAndGet(),"Robert");
 
-}
+    @RequestMapping("/mapAtom")
+    public Greeting countUser() {
+        return new Greeting(atomicLong.incrementAndGet(), "Robert");
+
+    }
 }

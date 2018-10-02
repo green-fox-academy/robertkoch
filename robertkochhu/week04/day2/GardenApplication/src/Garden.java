@@ -46,17 +46,17 @@ public class Garden {
     }
 
     public void watering(int amount) {
-        System.out.println("Watering with "+amount);
+        System.out.println("Watering with " + amount);
         for (Plant plant : garden) {
             if (plant.isItThirsty == true) {
-                plant.waterLevel += amount / counter*plant.waterRemainingPercent;
+                plant.waterLevel += amount / counter * plant.waterRemainingPercent;
                 System.out.println("The " + plant.color + " " + plant.kind + " needs water");
 
             } else {
                 System.out.println("The " + plant.color + " " + plant.kind + " does not need water");
             }
         }
-        counter =0;
+        counter = 0;
         System.out.println();
     }
 }

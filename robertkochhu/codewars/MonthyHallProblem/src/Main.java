@@ -3,11 +3,11 @@ public class Main {
     public static void main(String[] args) {
         int[] participantGuesses = {3, 3, 2, 3, 3, 2, 2, 3, 2, 2, 1, 1, 1, 1};
         int correctDoorNumber = 1;
-        System.out.println(mainCase(correctDoorNumber,participantGuesses));
+        System.out.println(mainCase(correctDoorNumber, participantGuesses));
 
     }
 
-    public  int mainCase(int correctDoorNumber, int[] participantGuesses) {
+    public int mainCase(int correctDoorNumber, int[] participantGuesses) {
         int winnerCounter = 0;
         for (int i = 0; i < participantGuesses.length; i++) {
             if (participantGuesses[i] == 1) {
@@ -23,7 +23,7 @@ public class Main {
                 winnerCounter++;
             }
         }
-        int winnerPercent = Math.round((winnerCounter / participantGuesses.length)*100);
+        int winnerPercent = Math.round((winnerCounter / participantGuesses.length) * 100);
         return winnerPercent;
     }
 

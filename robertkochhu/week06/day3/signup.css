@@ -9,23 +9,27 @@
     display: inline-block;
     background-color: white;
     width: 198px;
-    margin-left:5%;
-    font-size:40px;
+    margin-left: 5%;
+    font-size: 40px;
     /* padding-bottom: 155px; */
     /* height: 771px; */
     vertical-align: middle;
 }
+
 .a3 {
     display: inline-block;
     background-color: white;
     /* margin-bottom: 350px; */
-    width:300px;
+    width: 300px;
 }
-.a0{background-color: white;
-    width:1200px;
-    margin-left:20%;
+
+.a0 {
+    background-color: white;
+    width: 1200px;
+    margin-left: 20%;
 
 }
+
 body {
     background-color: grey;
 }
@@ -72,7 +76,7 @@ input:focus {
 .button {
     border: none;
     background-color: limegreen;
-    margin-top:50px;
-    font-size:32px;
-    color:white;
+    margin-top: 50px;
+    font-size: 32px;
+    color: white;
 }

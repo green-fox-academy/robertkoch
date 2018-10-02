@@ -24,16 +24,19 @@ public class ConditionalVariableMutation {
         int c = 123;
         int credit = 100;
         boolean iBonus = false;
-        if (credit >= 50 && iBonus == false) {c-=2;}
-        else if (credit < 50 && iBonus == false){c -=1;}
-        else if (iBonus == true) {c +=0;}
-        {System.out.println(c);}
-
-
-
-
-
+        if (credit >= 50 && iBonus == false) {
+            c -= 2;
+        } else if (credit < 50 && iBonus == false) {
+            c -= 1;
+        } else if (iBonus == true) {
+            c += 0;
         }
+        {
+            System.out.println(c);
+        }
+
+
+    }
 
 
 }

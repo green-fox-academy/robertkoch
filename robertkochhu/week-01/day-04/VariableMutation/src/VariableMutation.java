@@ -5,7 +5,7 @@ public class VariableMutation {
         System.out.println(a);
 
         int b = 100;
-        b -=7;
+        b -= 7;
         System.out.println(b);
 
         int c = 44;
@@ -27,7 +27,7 @@ public class VariableMutation {
 
         int g1 = 350;
         int g2 = 200;
-        boolean bol22 = g2*2 > g1;
+        boolean bol22 = g2 * 2 > g1;
         System.out.println(bol22);
 
         int h = 135798745;
@@ -36,7 +36,7 @@ public class VariableMutation {
 
         int i1 = 10;
         int i2 = 3;
-        boolean d44 = i2*i2 < i1 && i1 < i2*i2*i2;
+        boolean d44 = i2 * i2 < i1 && i1 < i2 * i2 * i2;
         System.out.println(d44);
 
         int j = 1521;
@@ -44,7 +44,7 @@ public class VariableMutation {
         System.out.println(e5);
 
         String k = "Apple";
-        System.out.println(k + k + k +k );
+        System.out.println(k + k + k + k);
 
 
     }

@@ -10,9 +10,7 @@ public class Plant {
     public String kind;
 
 
-
-
-    }
+}
 
 
 

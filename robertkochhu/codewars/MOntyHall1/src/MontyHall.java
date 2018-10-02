@@ -3,7 +3,7 @@ public class MontyHall {
     public static void main(String[] args) {
         int[] participantGuesses = {3, 3, 2, 3, 3, 2, 2, 3, 2, 2, 1, 1, 1, 1};
         int correctDoorNumber = 1;
-        System.out.println(mainCase(correctDoorNumber,participantGuesses));
+        System.out.println(mainCase(correctDoorNumber, participantGuesses));
 
     }
 
@@ -24,7 +24,7 @@ public class MontyHall {
             }
         }
 
-        return winnerCounter / participantGuesses.length*100;
+        return winnerCounter / participantGuesses.length * 100;
     }
 
 }

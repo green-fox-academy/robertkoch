@@ -9,7 +9,6 @@ public class TaskGreet {
         return "Hello " + input;
 
 
-
     }
 
 }

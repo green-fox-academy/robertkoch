@@ -11,11 +11,11 @@ public class WriteSingleLine {
         // then it should print an error message like: "Unable to write file: my-file.txt"
         List<String> content = new ArrayList();
         content.add("Koch Robert");
-        try{
+        try {
             Path filePath = Paths.get("my-file.txt");
-            Files.write(filePath,content);
+            Files.write(filePath, content);
 
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println("no file found");
 
         }

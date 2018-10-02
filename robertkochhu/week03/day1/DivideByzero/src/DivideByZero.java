@@ -11,7 +11,7 @@ public class DivideByZero {
 
 
         try {
-            int result = 10/userInputNumber;
+            int result = 10 / userInputNumber;
             System.out.println(result);
         } catch (
                 ArithmeticException e) {

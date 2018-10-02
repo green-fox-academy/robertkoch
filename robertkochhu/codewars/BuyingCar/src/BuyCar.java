@@ -9,7 +9,6 @@ How many months will it take him to save up enough money to buy the car he wants
 		where 6 is the number of months at the end of which he can buy the new car and 766 is the nearest integer to '766.158...' .*/
 
 
-
 public class BuyCar {
     public static final double LOSS_PERCENT_INCREASE = 0.5;
 
@@ -20,7 +19,7 @@ public class BuyCar {
         double priceNew = startPriceNew;
         double savings = 0;
 
-        while ((priceOld + savings) < priceNew){
+        while ((priceOld + savings) < priceNew) {
             months++;
 
             if (months % 2 == 0) {

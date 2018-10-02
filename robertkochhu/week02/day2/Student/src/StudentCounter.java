@@ -42,7 +42,7 @@ public class StudentCounter {
         row5.put("candies", 2);
         map.add(row5);
 
-        for()
+        for ()
 
         // Display the following things:
         //  - Who has got more candies than 4 candies
