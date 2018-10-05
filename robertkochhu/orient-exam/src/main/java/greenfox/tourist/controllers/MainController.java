@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MainController {
@@ -29,7 +30,16 @@ public class MainController {
         attractionService.create(nameInput, cityInput, priceInput, longitudeInput, latitudeInput, categoryInput, durationInput, recommandedAgeInput);
         return ("redirect:/");
     }
+
     @GetMapping("/edit/{id}")
-    public String editFunction(@PathVariable(value = "id") long id){}
+    public String editFunction(@PathVariable(value = "id") long id) {
+        return ("redirect:/");
+    }
+
+    @GetMapping("/budge")
+    @ResponseBody
+    public Attraction budgeFunction(){
+        return null;
+    }
 
 }
