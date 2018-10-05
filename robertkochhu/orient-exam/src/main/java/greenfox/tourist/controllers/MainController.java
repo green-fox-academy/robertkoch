@@ -5,6 +5,7 @@ import greenfox.tourist.services.AttractionService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
@@ -23,7 +24,12 @@ public class MainController {
     }
 
     @PostMapping("/add")
-    public String addFunction() {
+    public String addFunction(String nameInput, String cityInput, String priceInput, String longitudeInput,
+                              String latitudeInput, String categoryInput, String durationInput, String recommandedAgeInput) {
+        attractionService.create(nameInput, cityInput, priceInput, longitudeInput, latitudeInput, categoryInput, durationInput, recommandedAgeInput);
         return ("redirect:/");
     }
+    @GetMapping("/edit/{id}")
+    public String editFunction(@PathVariable(value = "id") long id){}
+
 }
