@@ -41,5 +41,15 @@
     <input type="text" name="recommandedAgeInput" required="true"><br>
     <button type="submit">Submit</button>
 </form>
+<form method="get" action="/edit/{id}">
+    <input type="text" name="nameInput" required="true" th:value="${idValue.getName()}"><br>
+    <input type="text" name="cityInput" required="true" th:value="${idValue.getCity()}"><br>
+    <input type=" text" name="priceInput" required="true" th:value="${idValue.getPrice()}"><br>
+    <input type="text" name="longitudeInput" required="true" th:value="${idValue.getLongitude()}"><br>
+    <input type=" text" name="latitudeInput" required="true" th:value="${idValue.getLatitude()}"><br>
+    <input type="text" name="categoryInput" required="true" th:value="${idValue.getCategory()}"><br>
+    <input type=" text" name="durationInput" required="true" th:value="${idValue.getDuration()}"><br>
+    <input type="text" name="recommandedAgeInput" required="true" th:value="${idValue.getRecommandedAge()}"><br>
+</form>
 </body>
 </html>

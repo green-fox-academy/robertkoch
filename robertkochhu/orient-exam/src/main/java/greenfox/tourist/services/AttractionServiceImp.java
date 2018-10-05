@@ -24,6 +24,15 @@ public class AttractionServiceImp implements AttractionService {
         attractionRepository.save(new Attraction(nameInput, cityInput, categoryInput, Integer.parseInt(priceInput),
                 Float.parseFloat(longitudeInput), Float.parseFloat(latitudeInput), Float.parseFloat(recommandedAgeInput), Integer.parseInt(durationInput)));
     }
+    @Override
+    public Attraction attractionFinder(long id) {
+       return  attractionRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public Attraction cheapestRestaurantFinder(Iterable<Attraction> list) {
+        return null;
+    }
 
     @Override
     public void editName(long id, String nameInput) {
@@ -73,4 +82,6 @@ public class AttractionServiceImp implements AttractionService {
         Optional<Attraction> attraction = attractionRepository.findById(id);
         attraction.get().setPrice(Integer.parseInt(priceInput));
     }
+
+
 }

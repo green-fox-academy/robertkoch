@@ -27,18 +27,20 @@ public class MainController {
     @PostMapping("/add")
     public String addFunction(String nameInput, String cityInput, String priceInput, String longitudeInput,
                               String latitudeInput, String categoryInput, String durationInput, String recommandedAgeInput) {
+     
         attractionService.create(nameInput, cityInput, priceInput, longitudeInput, latitudeInput, categoryInput, durationInput, recommandedAgeInput);
         return ("redirect:/");
     }
 
     @GetMapping("/edit/{id}")
-    public String editFunction(@PathVariable(value = "id") long id) {
-        return ("redirect:/");
+    public String editFunction(@PathVariable(value = "id") long id, Model model) {
+        model.addAttribute("idValue", attractionService.attractionFinder(id));
+        return ("main");
     }
 
     @GetMapping("/budge")
     @ResponseBody
-    public Attraction budgeFunction(){
+    public Attraction budgeFunction() {
         return null;
     }
 
