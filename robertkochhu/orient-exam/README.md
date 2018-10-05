@@ -39,6 +39,7 @@ You have to import the following database:
 CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
 
 ## 2) Continue with your class' language:
+SELECT * FROM CarsForSale
+WHERE manufacturerName=Renault AND aqusitionPrice>8000;
 
- -  [Java](java.md)
- -  [JavaSript](js.md)
+UPDATE CarsForSale Set aqusitionPrice = aqusitionPrice -100 where manufacturerName=VolksWagen
