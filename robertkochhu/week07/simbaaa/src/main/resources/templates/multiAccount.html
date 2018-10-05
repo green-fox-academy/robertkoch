@@ -25,13 +25,12 @@
             <td th:text="${BankAccount.balance}"></td>
             <td th:text="${BankAccount.animalType}"></td>
             <td th:text="${BankAccount.isKing()}"></td>
-            <td>
                 <div th:switch="${BankAccount.isGood()}">
                     <p th:case="true">Good one</p>
                     <p th:case="false">Bad one</p>
                 </div>
             </td>
-
+            <td><button type="submit">Raise balance</button></td>
         </tr>
     </th:block>
 </table>

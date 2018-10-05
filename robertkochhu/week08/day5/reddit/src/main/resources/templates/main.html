@@ -11,10 +11,10 @@
     <th:block th:each="post : ${posts}">
         <tr>
             <td>
-                <button type="submit">+</button>
+              <a th:href="@{|/main/${post.id}/upvote|}" >+</a>
             </td>
             <td>
-                <button type="submit">-</button>
+                <a th:href="@{|/main/${post.id}/downvote|}" >-</a>
             </td>
             <td th:text="${post.getPopular()}"></td>
             <td><a th:href="${post.getLink()}">
