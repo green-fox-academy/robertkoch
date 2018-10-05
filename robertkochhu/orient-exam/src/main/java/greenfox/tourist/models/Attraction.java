@@ -1,16 +1,16 @@
 package greenfox.tourist.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name ="attractions")
 public class Attraction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "attrName")
     private String name;
+    private String city;
     private String category;
     private int price;
     private String longitude;
@@ -18,8 +18,12 @@ public class Attraction {
     private int recommandedAge;
     private int duration;
 
-    public Attraction(String name, String category, int price, String longitude, String latitude, int recommandedAge, int duration) {
+    public Attraction() {
+    }
+
+    public Attraction(String name, String city, String category, int price, String longitude, String latitude, int recommandedAge, int duration) {
         this.name = name;
+        this.city = city;
         this.category = category;
         this.price = price;
         this.longitude = longitude;
@@ -28,8 +32,6 @@ public class Attraction {
         this.duration = duration;
     }
 
-    public Attraction() {
-    }
 
     public long getId() {
         return id;
@@ -45,6 +47,14 @@ public class Attraction {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getCategory() {
