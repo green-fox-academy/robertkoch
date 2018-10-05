@@ -2,7 +2,9 @@ package greenfox.tourist.services;
 
 import greenfox.tourist.models.Attraction;
 import greenfox.tourist.repositories.AttractionRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AttractionServiceImp implements AttractionService {
     AttractionRepository attractionRepository;
 

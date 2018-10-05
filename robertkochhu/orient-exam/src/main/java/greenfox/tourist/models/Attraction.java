@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "attractions")
 public class Attraction {
 
-    @Column(name ="attrName")
+    @Column(name = "attrName")
     private String name;
     private String city;
     private String category;
@@ -18,6 +18,7 @@ public class Attraction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     public Attraction() {
     }
 

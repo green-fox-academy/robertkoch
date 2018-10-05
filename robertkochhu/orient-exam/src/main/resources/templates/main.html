@@ -17,6 +17,18 @@
         <th>Duration</th>
         <th>Recommanded age</th>
     </tr>
+    <th:block th:each="attraction : ${attractions}">
+        <tr>
+            <td th:text="${attraction.getName()}"></td>
+            <td th:text="${attraction.getCity()}"></td>
+            <td th:text="${attraction.getPrice()}"></td>
+            <td th:text="${attraction.getLongitude()}"></td>
+            <td th:text="${attraction.getLatitude()}"></td>
+            <td th:text="${attraction.getCategory()}"></td>
+            <td th:text="${attraction.getDuration()}"></td>
+            <td th:text="${attraction.getRecommandedAge()}"></td>
+        </tr>
+    </th:block>
 </table>
 </body>
 </html>
