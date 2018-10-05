@@ -19,7 +19,7 @@
     </tr>
     <th:block th:each="attraction : ${attractions}">
         <tr>
-            <td th:text="${attraction.getName()}"></td>
+            <td th:text="${attraction.getName()}"><</td>
             <td th:text="${attraction.getCity()}"></td>
             <td th:text="${attraction.getPrice()}"></td>
             <td th:text="${attraction.getLongitude()}"></td>
@@ -30,5 +30,16 @@
         </tr>
     </th:block>
 </table>
+<form action="/add" method="post">
+    <input type="text" name="nameInput" required="true"><br>
+    <input type="text" name="cityInput" required="true"><br>
+    <input type="text" name="priceInput" required="true"><br>
+    <input type="text" name="longitudeInput" required="true"><br>
+    <input type="text" name="latitudeInput" required="true"><br>
+    <input type="text" name="categoryInput" required="true"><br>
+    <input type="text" name="durationInput" required="true"><br>
+    <input type="text" name="recommandedAgeInput" required="true"><br>
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
