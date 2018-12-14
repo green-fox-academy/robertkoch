@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Post {
+public class    Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
